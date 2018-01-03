@@ -10,21 +10,28 @@
     android:background="@android:color/holo_blue_light">
 
     <TextView
-        android:id="@+id/txt_tekstaktywnosc2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_tekst"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="200dp"
+        android:gravity="center"
         android:text="Kliknąłeś w listę miejsc"
-        android:textSize="15sp"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="5dp"/>
+        android:textSize="15dp" />
 
     <TextView
-        android:id="@+id/txt_Lista"
-        android:layout_width="wrap_content"
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista aktualnie nie jest dostępna"
-        android:textSize="15sp"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="5dp"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+        android:textSize="15dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

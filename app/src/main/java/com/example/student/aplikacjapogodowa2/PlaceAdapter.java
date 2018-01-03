@@ -1,3 +1,4 @@
+package com.example.student.aplikacjapogodowa2;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
+
 
 /**
  * Created by student on 2018-01-03.
@@ -22,7 +23,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
     private OnPlaceClick listener;
 
 
-    PlaceAdapter(ArrayList<Place> places,OnPlaceClick listener) {
+    PlaceAdapter(ArrayList<Place> places, OnPlaceClick listener) {
         this.places = places;
         this.listener=listener;
 
@@ -61,7 +62,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
 
         private OnPlaceClick listener;
 
-        public ViewHolder(View itemView,OnPlaceClick listener) {
+        public ViewHolder(View itemView, OnPlaceClick listener) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             this.listener = listener;

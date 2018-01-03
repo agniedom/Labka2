@@ -13,12 +13,13 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+
 public class Main2Activity extends AppCompatActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
 
-    @BindView(R.id.txtv_result)
+    @BindView(R.id.txt_result)
     TextView txtv_result ;
     String place;
 

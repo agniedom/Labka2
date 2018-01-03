@@ -1,4 +1,4 @@
-/**
+package com.example.student.aplikacjapogodowa2; /**
  * Created by student on 2018-01-03.
  */
 
