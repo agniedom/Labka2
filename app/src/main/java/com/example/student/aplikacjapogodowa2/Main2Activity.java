@@ -30,6 +30,8 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         ButterKnife.bind(this);
 
+
+
         Bundle przekazanedane = getIntent().getExtras();
         String przekazanytekst = przekazanedane.getString("KEY");
         txtv_result.setText(przekazanytekst);
@@ -43,18 +45,7 @@ public class Main2Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        OnPlaceClick listener = (view, position) -> {
-
-            place = places.get(position).getPlaceName();
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putString("Nazwa", place);
-            intent.putExtras(bundle);
-            startActivity(intent);
-        };
-
-
-        PlaceAdapter placeAdapter = new PlaceAdapter(places,  listener);
+        PlaceAdapter placeAdapter = new PlaceAdapter(places);
         recyclerView.setAdapter(placeAdapter);
 
 
