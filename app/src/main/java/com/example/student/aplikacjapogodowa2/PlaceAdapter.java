@@ -5,12 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 
@@ -24,16 +21,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
     private ArrayList<Place> places = new ArrayList<>();
     private OnPlaceClick listener;
 
-
     PlaceAdapter(ArrayList<Place> places,OnPlaceClick listener) {
         this.places = places;
         this.listener=listener;
-
-
     }
-
-
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemLayoutView = LayoutInflater.from(parent.getContext())
@@ -52,12 +43,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
         return places.size();
     }
 
-
-
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @BindView(R.id.place_name)
-        TextView place_name;
+        @BindView(R.id.city_name)
+        TextView city_name;
 
         @BindView(R.id.info)
         TextView info;
@@ -69,19 +58,15 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
             ButterKnife.bind(this, itemView);
             this.listener = listener;
             itemView.setOnClickListener(this);
-
-
         }
 
         private void setPlaceName(String placeName) {
-            place_name.setText(placeName);
+            city_name.setText(placeName);
         }
-
 
         public void setInfo(String information) {
             info.setText(information);
         }
-
 
         @Override
         public void onClick(View view) {

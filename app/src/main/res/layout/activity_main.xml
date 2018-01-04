@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.student.laboratoriumpum2.MainActivity"
+    tools:context="com.example.student.aplikacjapogodowa2.Main2Activity"
     android:background="@android:color/holo_blue_light">
 
     <TextView
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="5dp"/>
     <ImageView
-        android:id="@+id/obrazek"
+        android:id="@+id/obraz"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/ic_wb_sunny_black_24dp"

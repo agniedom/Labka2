@@ -5,16 +5,16 @@ package com.example.student.aplikacjapogodowa2;
  */
 
 public class Place {
-    private String placeName;
+    private String cityName;
     private int temperature;
     private String information;
 
     public String getPlaceName() {
-        return placeName;
+        return cityName;
     }
 
-    public void setPlaceName(String placeName) {
-        this.placeName = placeName;
+    public void setPlaceName(String cityName) {
+        this.cityName = cityName;
     }
 
     public int getTemperature() {
@@ -33,8 +33,8 @@ public class Place {
         this.information = information;
     }
 
-    public Place(String placeName,  String information) {
-        this.placeName = placeName;
+    public Place(String cityName,  String information) {
+        this.cityName = cityName;
 
         this.information = information;
     }
