@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Labka2.iml" filepath="$PROJECT_DIR$/Labka2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/domanska2.iml" filepath="$PROJECT_DIR$/domanska2.iml" />
+      <module fileurl="file://C:\aga\Labka2\app\app.iml" filepath="C:\aga\Labka2\app\app.iml" />
+      <module fileurl="file://C:\aga\Labka2\domanska2.iml" filepath="C:\aga\Labka2\domanska2.iml" />
     </modules>
   </component>
 </project>

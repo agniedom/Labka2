@@ -3,6 +3,7 @@ package com.example.student.aplikacjapogodowa2;
 /**
  * Created by student on 2018-01-03.
  */
+
 public class Place {
     private String placeName;
     private int temperature;
@@ -38,4 +39,3 @@ public class Place {
         this.information = information;
     }
 }
-

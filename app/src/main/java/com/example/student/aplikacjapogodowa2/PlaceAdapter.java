@@ -10,6 +10,8 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 
 
 /**
@@ -23,7 +25,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
     private OnPlaceClick listener;
 
 
-    PlaceAdapter(ArrayList<Place> places, OnPlaceClick listener) {
+    PlaceAdapter(ArrayList<Place> places,OnPlaceClick listener) {
         this.places = places;
         this.listener=listener;
 
@@ -62,7 +64,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
 
         private OnPlaceClick listener;
 
-        public ViewHolder(View itemView, OnPlaceClick listener) {
+        public ViewHolder(View itemView,OnPlaceClick listener) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             this.listener = listener;
