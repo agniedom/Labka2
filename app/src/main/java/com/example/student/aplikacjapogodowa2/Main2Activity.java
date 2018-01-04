@@ -30,19 +30,23 @@ public class Main2Activity extends AppCompatActivity {
         String tekst = dane.getString("KEY");
         txt_Result.setText(tekst);
 
+        //Lista miejsc
         ArrayList<Place> places = new ArrayList<>();
         places.add(new Place("Katowice","Moje Miasto"));
         places.add(new Place("Poznań","Dobre naleśniki"));
         places.add(new Place("Zabrze","Mój Wydział"));
         places.add(new Place("Bieszczady","Bukowe Berdo"));
 
+        //Tworzenie RecykerView
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
 
 
+        //catch onclick
         OnPlaceClick listener = (view, position) -> {
 
             place = places.get(position).getPlaceName();
+            //go to mainactivity
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             Bundle bundle = new Bundle();
             bundle.putString("Nazwa", place);
@@ -50,6 +54,7 @@ public class Main2Activity extends AppCompatActivity {
             startActivity(intent);
         };
 
+        //Tworzenie Adaptera
         PlaceAdapter placeAdapter = new PlaceAdapter(places,  listener);
         recyclerView.setAdapter(placeAdapter);
 
